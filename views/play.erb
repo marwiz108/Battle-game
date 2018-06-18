@@ -1,9 +1,20 @@
-<%= @player_1_name %> vs <%= @player_2_name %>
-
-<%= @player_1_name %>: 60HP
-
-<%= @player_2_name %>: 60HP
-
-<form action="/attack">
-  <input type="submit" value="Attack">
-</form>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Battle</title>
+  </head>
+  <body>
+    <h2><%= @player_1_name %> vs <%= @player_2_name %></h2>
+    <div>
+      <%= @player_1_name %>: 50HP
+    </div>
+    <div>
+      <%= @player_2_name %>: 50HP
+    </div>
+    <div>
+      <form action="/attack">
+        <input type="submit" value="Attack">
+      </form>
+    </div>
+  </body>
+</html>
