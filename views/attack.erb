@@ -4,6 +4,17 @@
     <title>Battle</title>
   </head>
   <body>
-    <%= @player_1_name %> attacked <%= @player_2_name %>
+    <div>
+      <%= @player_1.name %> attacked <%= @player_2.name %>
+    </div>
+    <div>
+      <a href="/play">OK</a>
+    </div>
+    <!-- <div>
+      <%= @player_1.name %>: <%= @player_1.hit_points %>HP
+    </div>
+    <div>
+      <%= @player_2.name %>: <%= @player_2.hit_points %>HP
+    </div> -->
   </body>
 </html>
