@@ -4,12 +4,12 @@
     <title>Battle</title>
   </head>
   <body>
-    <h2><%= @player_1.name %> vs <%= @player_2.name %></h2>
+    <h2><%= @game.player_1.name %> vs <%= @game.player_2.name %></h2>
     <div>
-      <%= @player_1.name %>: <%= @player_1.hit_points %>HP
+      <%= @game.player_1.name %>: <%= @game.player_1.hit_points %>HP
     </div>
     <div>
-      <%= @player_2.name %>: <%= @player_2.hit_points %>HP
+      <%= @game.player_2.name %>: <%= @game.player_2.hit_points %>HP
     </div>
     <div>
       <form action="/attack">

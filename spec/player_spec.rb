@@ -16,13 +16,6 @@ describe Player do
     end
   end
 
-  # describe '#attack' do
-  #   it 'hits opponent' do
-  #     expect(computer).to receive(:damaged)
-  #     marwa.attack(computer)
-  #   end
-  # end
-  
   describe '#damaged' do
     it 'reduces hit points by 10' do
       expect { computer.damaged }.to change { computer.hit_points }.by -10
